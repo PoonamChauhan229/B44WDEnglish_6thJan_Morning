@@ -1,0 +1,234 @@
+var cardload
+var carLoad****
+var submitbutton
+var submitButton****
+
+IF CONDITION:
+
+1-
+if(condition==true){
+    true//block of code
+    }
+
+2-
+if(condition==true){
+    true//block of code
+}else{
+    false//block of code
+}
+
+3-
+if(condition==true){
+    true1//block of code
+}else if(condition==true){
+    true2//block of code
+}else if(condition==true){
+    true2//block of code
+}else if(condition==true){
+    true2//block of code
+}else{
+    false//block of code
+}
+
+
+parseInt()=>Convert to Integer
+if we are parsing a string,it returns the 1st Integer.
+NaN=>Not An Number
+
+parseInt(10.25)
+10
+parseInt(10.33)
+10
+parseInt(10.58)
+10
+parseInt(10.58)
+10
+parseInt("10a")
+10
+parseInt("40 years")
+40
+parseInt("40 60 70")
+40
+parseInt("He is 40 60 70 years")
+NaN
+parseInt("    60 ")
+60
+parseInt("He is 40 60 70 years")
+NaN
+parseInt(10.99)
+10
+
+
+Number():
+Number(1)
+1
+Number(1.56)
+1.56
+Number("1.56")
+1.56
+Number("1.56 YEARS")
+NaN
+Number("1.57")
+1.57
+Number("1.56 YEARS OLD")
+NaN
+Number(true)
+1
+Number(false)
+0
+Number("false")
+NaN
+Number("false 78")
+NaN
+Number("1.5567890345678")
+1.5567890345678
+
+
+
+Array:
+length=>total no of elements of that particular arrays
+index: start=> 0 and ends=> n-1
+
+arr.length: to find the length of array
+
+
+for loop=>
+1 to 10 print 
+
+use:pythontutor
+
+var arr=[10,20,30,40,50]
+arr[1]
+20
+arr[2]
+30
+
+
+for(i=0;i<=5;i++){
+    console.log(i)//0 to 5
+}
+
+for(i=0;i<arr.length;i++){
+    console.log(i)//0 to 4
+    console.log(arr[i])
+}
+
+  console.log(arr[i])
+arr[0]
+arr[1]
+arr[2]
+arr[3]
+arr[4]
+
+
+var arr=["10","20","30","40",50]
+ for(var i=0;i<arr.length;i++){
+            console.log(parseInt(arr[i]),typeof(parseInt(arr[i])))
+            console.log(i,typeof(i))
+        }
+
+
+CodeKata:
+
+https://www.guvi.in/
+
+Sample Template
+
+// Getting input via STDIN
+const readline = require("readline");
+
+const inp = readline.createInterface({
+  input: process.stdin
+});
+
+const userInput = [];
+
+inp.on("line", (data) => {
+  userInput.push(data);
+});
+
+inp.on("close", () => {
+  //start-here
+  //Your code goes here … replace the below line with your code logic 
+
+  console.log(userInput);//array
+  console.log(userInput[0])
+
+  //end-here
+});
+
+Input: certain values given by the userInput
+output: afte exceution of code// final answer
+
+example:
+sugar cane=>juice
+
+userInput: array of strings.
+
+
+ //Your code goes here … replace the below line with your code logic 
+//Soln-1
+console.log(userInput[0]);
+
+//split
+
+//Soln-2
+var a=userInput[0].split(" ")
+
+// console.log(userInput[0].split(" "));
+console.log(a.join(" "));
+//join
+//join()=>along with ,
+//join(" ")
+
+//Soln-3
+console.log(userInput[0].split(" ").join(" "));
+
+//Soln-4
+var b=userInput[0].split(" ").join(" ")
+console.log(b)
+
+//end-here
+
+
+
+Questtion to solve :
+5 Questtion
+Write a code to get the input in the given format and print the output in the given format
+
+Input Description:
+Three integers are given in line by line.
+
+Output Description:
+Print the integers in a single line separate by space.
+
+Sample Input :
+2
+4
+5
+Sample Output :
+2 4 5
+
+-----------------------------------------------------------------
+6 Questtion
+Write a code to get the input in the given format and print the output in the given format
+
+Input Description:
+First-line indicates two integers separated by space. Second-line indicates three integers separated by space. Third-line indicates three integers separated by space
+
+Output Description:
+Print the input in the same format.
+
+Sample Input :
+2 5
+2 5 6
+2 4 5
+Sample Output :
+2 5
+2 5 6
+2 4 5
+
+
+
+
+
