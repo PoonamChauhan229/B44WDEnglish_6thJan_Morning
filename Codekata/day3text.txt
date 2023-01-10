@@ -1,0 +1,89 @@
+var arr=[10,20,30,40,50,60]//6//0-5=>5+1=6
+console.log(arr[0])
+console.log(arr[1])
+console.log(arr[2])
+// for loop
+//for(initialization,condition,increment/decreement){
+//block of code
+//}
+
+for(var i=0;i<arr.length;i++){
+  console.log(arr[i])
+}
+
+
+
+Assignment Operators:
+
+=     >  Assignment Operator
+x=y 
+
+x+=y(result*i)
+x=x+y
+
+x-=y
+x=x-y
+
+example
+x=50
+y=100
+
+x=50-100
+x=-50
+
+x*=y
+x=x*y
+
+/=
+x/=y
+x=x/y
+
+%=
+x%=y
+x=x%y
+
+**=
+x**=y
+x=x**y
+
+
+
+You are provided with a number, "N". Find its factorial.
+
+Input Description:
+A positive integer is provided as an input.
+
+Output Description:
+Print the factorial of the integer.
+
+Sample Input :
+2
+Sample Output :
+2
+
+
+Sol:
+var result=1
+for(var i=1;i<userInput[0];i++){
+    // console.log(i)
+           result+= result*i// result=result+(result*i)
+}
+console.log(result)
+  //end-here
+});
+
+Q-2: Homework:
+Print the First 3 multiples of the given number "N". (N is a positive integer)
+
+Note: print the characters with a single space between them.
+
+Input Description:
+A positive integer is provided to you as an input.
+
+Output Description:
+Print the First 3 multiples of the number with single spaces between them as an output.
+
+Sample Input :
+2
+Sample Output :
+2 4 6
