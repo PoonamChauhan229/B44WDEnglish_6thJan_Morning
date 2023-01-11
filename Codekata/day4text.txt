@@ -1,0 +1,136 @@
+var result=1
+
+for(var i=1;i<=5;i++){
+    // console.log(i)
+           result=result*i           
+}
+console.log(result)
+  //end-here
+
+  5*4*3*2*1=120
+  
+
+  1st-> 1*1=>1
+  2nd-> 1*2=>2
+  3rd-> 2*3=>6
+  4th-> 6*4=>24
+  5th-> 24*5=>120
+  6th->loop will terminate
+
+  result: 120
+
+
+  Math methods
+  Largesnum 
+  Math.max()
+
+  Math.max(1,3,2)
+3
+Math.max(1,3,2,45)
+45
+Math.max([1,3,4,5])
+NaN
+Math.max(...[1,3,4,5])
+5
+var a=[1,3,4,5]
+console.log(...a)
+Math.max(...a)
+5
+
+
+1, 4, 9, 16, 25, 36, 49, 64, 81
+1,2,3,4,5,6,7,8,9
+
+1 to 18
+
+1 to 18=> logic
+
+.toFixed()
+converts a number to string
+rounds of the string to a specified number of decimal points.
+
+2*Math.PI*2
+12.566370614359172
+
+var x=2*Math.PI*2
+x
+12.566370614359172
+x.toFixed(3)
+'12.566'
+x.toFixed(2)
+'12.57'
+x.toFixed(5)
+'12.56637'
+
+Math.pow()
+
+3*3*3
+27
+power of=> raise to something
+var  a=2
+2**2
+4
+
+2 power of 2
+Math.pow(2,3)
+8
+2**3
+8
+Math.pow(a,3)
+8
+Math.pow(userInput[0],3)
+
+Math.pow(x,y) => ** Operator
+x=>base value
+y=>exponent value
+
+
+Homework:
+Q1-
+Write a code to get the input and print it 5 times.
+
+Input Description:
+A single line contains an integer N.
+
+Output Description:
+Output contains 5 lines with each line having the value N.
+
+Sample Input :
+4
+Sample Output :
+4
+4
+4
+4
+4
+Ans: 3 lines
+
+Q2-
+You are provided with two numbers. Find and print the smaller number.
+
+Input Description:
+You are provided with two numbers as input.
+
+Output Description:
+Print the small number out of the two numbers.
+
+Sample Input :
+23 1
+Sample Output :
+1
+
+Ans: 1 line
+
+
+
+
+
+
+
+
+
+
+
+
+
+
