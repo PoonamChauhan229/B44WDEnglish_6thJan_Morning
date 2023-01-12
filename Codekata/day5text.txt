@@ -1,0 +1,97 @@
+ var arr=[]
+  for(var i=1;i<=userInput[0];i++){
+     // console.log(i*9)
+      arr.push(i*9)//push method
+  }
+console.log(...arr)//spread operator
+console.log(arr.join(" "))//join method
+
+
+// The area of an equilateral triangle is ¼(√3a2) 
+var area=1/4*(Math.sqrt(3)*Math.pow(userInput[0],2))
+console.log(area.toFixed(2))
+
+replace=>search and replace with specified values
+
+replace("What","with What")
+=>replce the First occurence
+=>if we want to replace globally we have use replace(/What/g,"With What")
+=>returns a new string with the values replaced
+=>doesnt change the orginal string
+
+let str="Visit Guvi"
+str.replace("Visit","Hello")
+'Hello Guvi'
+str
+'Visit Guvi'
+let newstr=str.replace("Visit","Hello")
+
+newstr
+'Hello Guvi'
+str
+'Visit Guvi'
+str
+'Visit Guvi'
+var text="Welcome to Guvi we are learning codekata in Guvi"
+
+var newtext=text.replace("Guvi","Javascript")
+
+newtext
+'Welcome to Javascript we are learning codekata in Guvi'
+var text=" Guvi Welcome to Guvi we are learning codekata in Guvi"
+
+var newtext=text.replace("Guvi","Javascript")
+
+newtext
+' Javascript Welcome to Guvi we are learning codekata in Guvi'
+var newtext=text.replace(/Guvi/g,"Javascript")
+
+newtext
+' Javascript Welcome to Javascript we are learning codekata in Javascript'
+
+ console.log(userInput[0].replace(" ","").length)
+
+ Homework:
+
+ Q1-
+ Write a code to get an integer N and print values from 1 till N in a separate line.
+
+Input Description:
+A single line contains an integer N.
+
+Output Description:
+Print the values from 1 to N in a separate line.
+
+Sample Input :
+5
+Sample Output :
+1
+2
+3
+4
+5
+
+Q2-
+You are given the coefficients of a quadratic equation in order A, B & C.
+
+Where A is the coefficient of X2,  B is the coefficient of X and C is the constant term in the most simplified form.
+
+Example: For  X2 + 5X + 6 = 0, you are given the input as: 1 5 6.
+
+Write a program to find all of the roots of the quadratic.
+
+Note: The output should be up to 2nd decimal place (round off if needed) and in case of a recurring decimal use braces i.e. for eg: 0.33333..... => 0.33.
+
+Note: Use Shri Dharacharya's Method to solve i.e. X = {-b + √(b² - 4ac) } / 2a & {-b-√(b² -4ac)} / 2a
+
+Input Description:
+Three numbers corresponding to the coefficients of x(squared), x and constant are given as an input in that particular order
+
+Output Description:
+Print the two values of X after rounding off to 2 decimal places if required.
+
+Sample Input :
+1 5 6
+Sample Output :
+-2.00
+-3.00
