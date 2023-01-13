@@ -1,0 +1,85 @@
+{
+
+}
+
+1 line code => dont need {}
+if()//code
+for()//code
+
+multiple line => need {}
+
+if()//code
+for()//code
+
+if(){
+//multiple lines
+}
+
+Q. Print the values from N to 1 in a separate line.
+decreement:
+
+for(var i=userInput[0];i>=1;i--){
+    console.log(i)
+}
+
+increment:
+
+for(var i=0;i<userInput[0];i++){
+    console.log(userInput[0]-i)
+}
+
+
+//   Print the even values from 1 to N in a separate line.
+// even
+   for(var i=1;i<=userInput[0];i++){
+       //%=>remainder==0
+       if(i%2==0){
+           console.log(i)
+       }
+   }
+//   odd
+ for(var i=1;i<=userInput[0];i++){
+       //%=>remainder==0
+       if(i%2!=0){
+           console.log(i)
+       }
+   }
+
+Q- Print the sum of values from 1 to N.
+
+var sum=0;
+for(var i=1;i<=userInput[0];i++){
+//  sum=sum+i
+    sum+=i;
+}
+//0+1=1
+//1+2=3
+//3+3=6
+console.log(sum)
+
+reverse()
+=>reverse the order of the elements in an array
+=> overwrites the orginal array
+
+var arr = [2,3,4,5,6,7,8,9,10]
+
+arr.reverse()
+
+(9) [10, 9, 8, 7, 6, 5, 4, 3, 2]//reversed
+
+arr
+(9) [10, 9, 8, 7, 6, 5, 4, 3, 2]//overwrites the orginal array
+
+Print the sum of the digits of the integer.
+
+var arr=userInput[0].split("")
+//console.log(arr)
+var sum=0;
+for(var i=0;i<arr.length;i++){
+    sum+=parseInt(arr[i])//sum=sum+parseInt(arr[i])
+}
+console.log(sum)
+
+Homework:
+Solve 4 remaining problem-Absolute Beginners
+Sove min 10 problems from looping
