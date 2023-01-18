@@ -1,0 +1,73 @@
+Even or odd:
+
+//   console.log(userInput[0].split("").sort());
+  var arr=userInput[0].split("").sort();
+  var even=[];
+  var odd=[];
+//   console.log(arr.length)
+  for(var i=0;i<arr.length;i++){
+      if(arr[i]%2==0){
+          even.push(arr[i])
+      }
+      else{
+          odd.push(arr[i])
+      }
+  }
+//   2 ways=>join method
+  console.log(even.join(" "))
+  console.log(odd.join(" "))
+  
+  //another way=>spread operator
+  console.log(...even)
+  console.log(...odd)
+
+  indexOf:
+var arr = [2,3,4,5,6,7,8,9,10]
+undefined
+arr.indexOf(2)
+0
+arr.indexOf(3)
+1
+arr.indexOf(7)
+5
+arr.indexOf(10)
+8
+
+var str="Heelo World Welcome to next generation"
+undefined
+str.indexOf("Heelo")
+0
+str.indexOf("to")
+20
+str.indexOf("e")
+1
+str.indexOf("o")
+4
+
+-------
+var arr=[1,6,4,0,3]
+undefined
+arr.indexOf(6)
+1
+arr.indexOf(0)
+3
+1-3
+-2
+
+
+Homework:
+Q1.
+Assume you are a student studying in school.You are given a task to find first negative integer for each and every window of size k.
+
+Input Description:
+First line contains an integer n denoting the size of the array. The next line contains n space separated integers forming the array. The last line contains the window size k.
+
+Output Description:
+Print the first negative integer in that window.If all the numbers are positive print 0
+
+Sample Input :
+7
+1 -2 -3 -4 5 6 -7
+3
+Sample Output :
+-2 -2 -3 -4 -7
