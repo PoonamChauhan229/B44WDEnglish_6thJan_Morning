@@ -1,0 +1,159 @@
+Phython Tutor:
+
+var userInput=["1 -2 -3 -4 5 6 -7"]
+var arr=userInput[0].split(" ")
+//console.log(arr)
+var ival=[];
+var jval=[];
+var result=[];
+var finalresult=[];
+// i=0;j=0//j=i=>3=> <=i+2=2,123
+// i=1;j=1//j=i=>   <=i+2=2,123
+// i=2;j=2//j=i     <=i+2=2,123
+for(var i=0;i<arr.length-2;i++){
+// console.log(arr[i])
+for(var j=i;j<=(i+2);j++){
+  ival.push(i)
+  jval.push(j)
+  result.push(arr[j])   
+  //console.log(result)
+}
+//console.log(result)
+if(result[0]>0 && result[1]>0 && result[2]>0){
+finalresult.push(0)
+}
+else if(result[0]<result[1] && result[0]<result[2]){
+finalresult.push(result[0])
+} else if(result[1]<result[0] && result[1]<result[2]){
+finalresult.push(result[1])
+}else{
+finalresult.push(result[2])
+}
+result=[]
+}
+console.log(finalresult)
+
+
+Soln1:
+let n = parseInt(userInput[0]);  //7
+let arr = userInput[1].split(" ");   //1 -2 -3 -4 5 6 -7
+let k = parseInt(userInput[2]); //3
+let res = [];
+for(let i=0; i<=n-k; i++){
+    let min=0;
+    for(let j=i; j<k+i;j++){
+        if(arr[j]<min){
+            min = arr[j];
+            break;
+        }
+    }
+    res.push(min);
+}
+console.log(...res);
+                        
+soln2:
+//code logic 
+  var arr=userInput[1].split(" ");
+  //console.log(arr)
+  console.log(arr.slice(4,6))
+  var x= -1;
+  var y= 2;
+  result=[];
+  for(var i=0;i<arr.length-2;i++)
+  {
+    x+=1;
+    y+=1;
+    var w=arr.slice(x,y)
+    //console.log(w)
+      if(w[0]>=0 && w[1]>=0 &&w[2]>=0)     // to check if all 3 numbers are positive integer
+      {
+      result.push(0)
+      }
+      for(var j=0;j<3;j++)   // to fetch 1st negative integer
+                           {
+                           if(w[j]<0)
+      {
+      result.push(w[j])
+      break;
+      }
+    }
+}
+  console.log(...result)  
+
+
+
+Saving array problem:
+var saving=1000;
+  var firstmonth=1000;
+  var amount=0;
+  for(var i=1;i<=userInput[0];i++){
+      amount+=firstmonth*i//amount=amount+(firstmonth*i)
+  }
+  
+  console.log(saving+amount)
+
+
+
+Zen:
+
+Print the number which is less than 15 if there is no number exits print -1
+  console.log(userInput[1].split(" "))
+  var arr=userInput[1].split(" ")
+  var oddEven=[]
+  for(i=0;i<arr.length;i++){
+      if(arr[i]<15){
+          oddEven.push(arr[i])
+      }else{
+        //   oddEven.push(-1)
+        oddEven=[-1]
+      }
+  }
+  console.log(...oddEven)
+
+
+string method:
+
+var str="Hello"
+str.toUpperCase()
+'HELLO'
+str
+'Hello'
+str.toLowerCase()
+'hello'
+str
+'Hello'
+
+var str="Hello World"
+undefined
+str.toUpperCase()
+'HELLO WORLD'
+
+
+HomeWork:
+You are given with an circular array .Your task is calculate the difference between two consecutive number. And if difference is greater than ‘k’, print 1 else print 0
+
+Input Description:
+You are given two numbers ‘n’, ’m’. Next line contains n space separated integers.
+
+Output Description:
+Print 1 if the difference is greater than ‘m’.
+
+Sample Input :
+5 15
+50 65 85 98 35
+Sample Output :
+0 1 0 1 0                      
+
+Q2:
+Given a year, find whether leap year or not?
+
+Input Description:
+Given a 4 digit number
+
+Output Description:
+Print leap year or not a leap year
+
+Sample Input :
+1996
+Sample Output :
+leap year
