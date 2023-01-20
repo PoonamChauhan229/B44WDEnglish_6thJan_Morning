@@ -1,0 +1,91 @@
+3/2
+1.5
+7/2
+3.5
+11/2
+5.5
+Math.floor(11/2)
+5
+Math.floor(10/2)
+5
+Math.floor(13/2)
+6
+87/2
+43.5
+Math.ceil(13/2)
+7
+Math.round(12.1)
+12
+Math.ceil(12.1)
+13
+Math.floor(12.1)
+12
+Math.round(12.5)
+13
+
+
+ar data=userInput[0].split("")
+    //console.log(data)
+    //console.log(data.length)
+    
+    //num as index
+    var num=Math.floor(data.length/2)//middle element => even num|| odd num=>decimal=>6=>3//5=>2.5=>2
+    // hequle
+    // he**le
+    
+    // hequl
+    // he*ul
+    
+    if(data.length%2==0){//6%2==0
+        //even
+        data[num]="*";//data[3]="*"
+        data[num-1]="*";//data[2]="*"
+    }else{
+        data[num]="*"//data[2]="*"
+    }
+    console.log(data.join(""))
+
+
+Patterns:
+
+*****
+*****
+*****
+*****
+i=>1 to 4->outer loop=>rows
+j=>1 to 4->inner loop=> cols=>print the Output
+k=> for printing spaces
+
+i=2; j=1 to 4
+i=3; j=1 to 4
+2 for loops:
+for(var i=1;i<=4;i++){
+    console.log("*")
+}
+
+var str=""
+for(var i=1;i<=4;i++){
+    // console.log("*")
+    for(var j=1;j<=4;j++){
+      str+="*"
+      }
+      str+="\n"//nextline
+}
+console.log(str)
+
+
+1111
+2222
+3333
+4444
+
+var str=""
+for(var i=1;i<=4;i++){
+    // console.log("*")
+    for(var j=1;j<=4;j++){
+      str+=i
+      }
+      str+="\n"//nextline
+}
+console.log(str)
+
