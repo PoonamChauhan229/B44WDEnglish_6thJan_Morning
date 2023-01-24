@@ -1,0 +1,57 @@
+Module 1:
+Introduction to JS(Javascript)
+
+Module 2:
+HTML CSS BOOTSTRAP
+
+Module 3:
+DOM Manipulation
+
+Module 4:
+Advance JS concepts:
+Async, Await, callback, promise
+
+Webcode:
+Mock Interview:
+
+*********PRACTICE PRACTICE PRACTICE PRACTICE PRACTICE PRACTICE PRACTICE PRACTICE PRACTICE *************
+
+
+Today :
+
+-Introduction to web Browser Wars DOM tree CSSOM tree,
+-Browser internals - HTML parser,
+-CSS parser,  JavaScript V8 engine, 
+-internals IP – MAC address – Ports & Evolution of HTTP,
+-HTTP Methods
+-How the Server looks at the URL
+-Request & Response cycle
+
+VS code Installation Link:
+https://code.visualstudio.com/download
+
+GitHub:
+https://github.com/
+
+Netlify:
+https://www.netlify.com/
+
+Browser:
+Google Chrome
+
+http://www.http2demo.io
+
+
+HTTP response status codes:
+Informational responses (100 – 199)
+Successful responses (200 – 299)
+Redirection messages (300 – 399)
+Client error responses (400 – 499)
+Server error responses (500 – 599)
+
+
+
+
+
+
+
