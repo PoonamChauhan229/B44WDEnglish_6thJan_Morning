@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Datatype</title>
+  </head>
+  <body>
+    <a id="anchorTag" href="https://pythontutor.com/visualize.html#mode=display">hi</a>
+    <a class="anchorclassaTag"href="https://pythontutor.com/visualize.html#mode=display">hi</a>
+   
+   
+   <script>
+      var person = {
+        "first Name": "Arvind",//key value pair
+        lastName: "Kumar",
+        age: 24,
+        eyeColor: "black",
+        hobbies: ["cricket","swimming","reading"],
+        enrolledcourses:["Javascript","html","css","react","mongodb","nodejs"]
+      };
+      console.log(person)
+
+      //dot operator
+      console.log(person.age)
+      console.log(person.enrolledcourses[1])
+
+    //   key with space
+    console.log(person["first Name"])
+
+    // insert something in object:
+    // syntax
+    // obj.key="value"/value
+
+    // gender=male
+    person.gender="male"
+    console.log(person)
+
+    // weeklyAttendance=[98,78,43,40]
+    person.weeklyAttendance=[98,78,43,40]
+    console.log(person)
+
+    // update:
+    person.age=26
+
+    person.age1=45;
+
+    //delete 
+
+    delete person.age1
+
+   
+      //length**********
+    var str="hello"
+    console.log(str.length)
+
+    var arr=[1,2,3,4,5]
+    console.log(arr.length)
+    // **************
+
+    //length of this object
+    
+    //  values of an object=> returns an array of values 
+    // syntax:Object.values(objname)
+
+     console.log(Object.values(person))
+
+    //  keys of an object=> returns an array of keys 
+    // syntax:Object.keys(objname)
+
+    console.log(Object.keys(person))
+
+     //length of this object
+     console.log(Object.keys(person).length)//arr.length
+
+     console.log(Object.values(person).length)//arr.length
+
+    //  Object:
+    // key:value pair
+    // addressed as {}
+    // seprated by commas
+
+    // Undefined 
+    var a=89;
+    console.log(a)
+
+    // not defined=>error
+    // console.log(b)
+      var abc=null;
+    if(abc==null){
+        console.log(1)
+    }else{
+        console.log(2)
+    }
+
+    var a;
+
+    var c=[];
+    
+    console.log(c)
+    if(c==undefined){
+        console.log(1)
+    }else{
+        console.log(2)
+    }
+
+
+    console.log("hellos")
+    window.console.log("hellos")
+
+
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+  </body>
+</html>

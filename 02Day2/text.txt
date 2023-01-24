@@ -1,0 +1,206 @@
+Nodejs download
+
+https://nodejs.org/en/
+
+
+
+Browser js vs Node js
+HTML Browser view - Debugger, Inspect,
+Data types
+Copy by value and Copy by reference
+Window & document object
+
+Data types:
+1.Primitive Datatypes
+2.Composite Datatypes
+3.Trivial Datatypes
+
+1.Primitive Datatypes:
+Inbuilt 
+a-Number
+b-String
+c-Boolean
+
+var a=50;
+a
+50
+typeof(a)
+'number'
+var b=50.5
+typeof(b)
+'number
+
+typeof: return the Datatype of the variable.
+
+String:
+var str=" Hello how are you 67 "
+undefined
+typeof(str)
+'string'
+var str="67"
+undefined
+typeof(str)
+'string'
+str
+'67'
+var str=" Hello how are you 67 "
+undefined
+typeof(str)
+'string'
+var str1="1267 "
+undefined
+typeof(str1)
+'string'
+
+Boolean:
+true or false
+
+var str=true
+undefined
+typeof(str)
+'boolean'
+var str1=false
+undefined
+typeof(str1)
+'boolean'
+var str1="false"
+undefined
+typeof(str1)
+'string'
+
+
+
+2-Composite Datatypes:
+1-Array:
+
+2-Object:
+
+Array:
+combination of heterogenous datatypes
+start index=0 and ends at n-1
+var arr=[1,2,3,78,90,"true","hello"]
+arr[4]=>90
+elements 
+
+var arr=[1,2,3,78,90,"true","hello"]
+arr[100]="guvi geek"
+//len=>101
+//last index=>100
+console.log(arr)
+console.log(arr.length)
+
+Objects:
+
+var obj={
+    key:"value",
+    key1:"val/num"
+}
+
+var person={
+    firstName:"Arvind",
+    lastName:"Kumar",
+    age:24,
+    eyeColor:"black",
+    hobbies:"cricket"
+}
+
+// array can be known as an object
+var arr = [2, "3", 4, 5, 6, 7, 8, 9, 10]
+undefined
+typeof(arr)
+'object'
+arr
+(9) [2, '3', 4, 5, 6, 7, 8, 9, 10]
+0: 2
+1: "3"
+2: 4
+3: 5
+4: 6
+5: 7
+6: 8
+7: 9
+8: 10
+
+3.Trivial Datatypes
+null
+undefined
+
+
+undefined:
+va has been declared but not assigned any value.
+
+not defined:
+it is an Error
+it occurs when, we dont declared the variable.
+
+null=== empty
+it is a special value that represent empty
+
+
+
+Copy by value and Copy by reference
+
+Copy by value
+Primitive datatypes
+
+Copy by reference
+Composite datatypes
+
+
+Window & document object
+
+document object
+
+
+>>entire webpae which is loaded
+
+>>Properties
+>>document.propertyName
+
+document
+document.head
+document.title
+document.body
+document.links
+
+>>Methods:
+()
+>>document.MethodName()
+
+document.getElementById("anchorTag")
+<a id=​"anchorTag" href=​"https:​/​/​pythontutor.com/​visualize.html#mode=display">​hi​</a>​
+
+document.getElementsByClassName('anchorclassaTag')
+
+
+Window:
+Top most object of DOM hierachy
+
+window.innerHeight
+657
+window.innerWidth
+837
+window.innerWidth
+834
+window.innerWidth
+834
+window.innerHeight
+657
+window.length
+0
+window.console
+console {debug: ƒ, error: ƒ, info: ƒ, log: ƒ, warn: ƒ, …
+
+
+Methods:
+()
+window.open()
+window.close()
+window.alert()
+window.stop()
+
+
+
+
+
+
