@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XMLHTTP Request</title>
+</head>
+<body>
+    <script>
+        //step1: create an XHR object
+        // new keyword
+
+        var request=new XMLHttpRequest()//empty envelope
+
+        //step2:open the connection 
+        //3paramaters
+        // 1-http method: GET
+        // 2-url:url link
+        // 3-true/false(not mandatory)// by default 3rd parameter is set as true
+        request.open('GET','https://restcountries.com/v3.1/all')//wrote address
+
+        // step 3: sending the connection
+        // initialting an bridge
+        request.send()// sent the envelope to the post office
+        // peform any action=> event is triggered=>
+
+        //step 4:server response
+        // request.response
+
+        request.onload=function(){
+            // console.log(JSON.parse(request.response))
+            var data= JSON.parse(request.response)
+            console.log(data)  
+            console.log(data[0].area) 
+            console.log(data[0].name.common)
+            
+            // for loop
+            for(var i=0;i<data.length;i++){
+                // console.log(data[i].area) 
+            }
+
+            // for in loop
+
+            for(var key in data ){
+                // console.log(data[key].area)
+            }
+
+            // for of loop
+            for(var element of data){
+                console.log(element.area)
+            }
+
+
+        }
+
+
+
+
+
+
+    </script>
+</body>
+</html>

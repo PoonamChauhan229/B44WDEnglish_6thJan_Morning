@@ -1,0 +1,310 @@
+Introduction to Array
+Array and JSON iteration
+XMLHTTPRequest
+Hoisting & scope
+
+Array:
+heterogenoue datatypes
+start =0 and ends at n-1
+respresents []
+inside array separed by commas are known as elements
+
+var arr=[1,2,3,4,5,6]
+we can access elements by using the index no
+arr[0]
+arr[1]
+.......
+arr[n]
+
+Array iteration:
+-for loop
+var arr=[12,23,31,43,54,65]
+
+for(var i=0;i<arr.length;i++){
+    console.log(arr[i])
+}
+
+Print 1 to 10
+for(var i=1;i<11;i++){
+    console.log(i)
+}
+
+Print pattern:
+Square Pattern:
+
+****
+****
+****
+****
+
+
+for(var i=1;i<5;i++){
+    console.log("*****")
+}
+
+
+Rightangle triangle
+*
+**
+***
+****
+*****
+vertical manner
+i want someone to check horizontal way:
+
+1 more for loop inside a forloop=> nested loops
+
+nested 
+{
+    {
+        {
+
+        }
+    }
+}
+
+2 for loops
+1=>i loop
+2=>j loop
+
+*
+**
+***
+****
+*****
+
+i=>rows=>5(print 1 to 5=>*)
+j=>cols=>5
+
+i loop will 1 time and j loop will run 5 time (Horizontal Way=>all cols to cover)
+i=1 j=1times(1 star)=>
+i=2 j=2times(2 star)
+i=3 j=3times
+i=4 j=4times 
+i=5 j=5times
+
+j loop
+start/intialization:j=1
+condition:j<=i
+increment:j++
+
+i loop
+start/intialization:i=1
+condition:i<=5
+increment:i++
+
+string=""
+
+print =>i loop terminates
+
+
+loops:
+for loop=>covered
+For Each=> after functions topics 
+for in=>
+for of=>
+
+for in=> objects
+var obj={
+    name:"John",
+    age:30,
+    city:"NewYork"
+}
+for(var key in obj){
+
+}
+
+var obj={
+    name:"John",
+    age:30,
+    city:"NewYork"
+}
+
+
+undefined
+for(var key in obj){
+    console.log(key)
+}
+name
+age
+city
+undefined
+for(var key in obj){
+    console.log(obj.key)
+}
+
+
+for(var key in obj){
+    console.log(obj[key])
+}
+John
+30
+NewYork
+var arr = [2, "3", 4, 5, 6, 7, 8, 9, 10]
+
+for(var key in arr){
+    console.log(arr[key])
+}
+2
+3
+4
+5
+6
+7
+8
+9
+10
+
+for(var key in obj){
+    console.log(key,obj[key])
+}
+name John
+age 30
+city NewYork
+
+var obj={
+    name:"John",
+    age:30,
+    city:"NewYork"
+}
+
+var obj1={
+    name:"John",
+    age:30,
+    city:"NewYork"
+}
+
+var obj2={
+    name:"John",
+    age:30,
+    city:"NewYork"
+}
+ ARRAY OF OBJECTS:
+ var arr=[{},{},{}]
+
+ var arr=[
+    {
+    name:"John",
+    age:30,
+    city:"NewYork"
+},{
+    name:"John",
+    age:30,
+    city:"NewYork"
+},{
+    name:"John",
+    age:30,
+    city:"NewYork"
+}
+ ]
+
+
+
+for of=>//array
+var cars=["BMW","Volvo","Fiat"]
+
+for(var element of cars){
+    console.log(element)
+}
+
+
+
+JSON:
+Javascript Object Notation=>""
+Object:
+var obj={
+    name:"John",
+    age:30,
+    city:"NewYork"
+}
+
+JSON:
+var jsonobj={
+    "name":"John",
+    "age":30,
+    "city":"NewYork"
+}
+
+
+Server:
+response =>String=> 
+send data to server => json
+
+
+var arr=[
+    {
+    "name":"John",
+    "age":30,
+    "city":"NewYork"
+},{
+    "name":"John1",
+    "age":30,
+    "city":"NewYork"
+},{
+    "name":"John2",
+    "age":30,
+    "city":"NewYork"
+}
+ ]
+
+ JSON.parse()
+    string=> JS object
+
+ JSON.stringify()
+Js object=> string=> 
+
+server undersstand string language
+server response us => string
+
+
+Server response:
+let text = '{ "employees" : [' +
+'{ "firstName":"John" , "lastName":"Doe" },' +
+'{ "firstName":"Anna" , "lastName":"Smith" },' +
+'{ "firstName":"Peter" , "lastName":"Jones" } ]}';
+
+JSON.parse(text)
+When we receive data from server, data is in form of string.
+so JSON.parse will convert into object for us.
+
+
+var obj={
+    name:"John",
+    age:30,
+    city:"NewYork"
+}
+JSON.stringify(obj)
+=> converts into string so that server can undersstand
+
+
+API:
+Application Programming Interface
+example:
+Weather :
+API: intermediatory that allows two application to communicate
+
+Resturant
+:Menu
+:call the waiter=> ordered(API)
+:waiter to place our order=> kitchen(Pulav, biryani, paneer,roti mushroom etc)=>server
+:waiter will fetch and serve the food 
+:response:food
+
+
+
+
+XMLHTTPRequest:
+
+We have to inetract with the server via API
+
+https://restcountries.com/#api-endpoints-v3-all
+
+
+https://restcountries.com/#api-endpoints-v3-all
+
+https://restcountries.com/v3.1/all
+
+https://developer.mozilla.org/en-US/docs/Web/API/Window/load_event
+
+
+
