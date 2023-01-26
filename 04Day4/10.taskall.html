@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Print all even nos of an array.
+        // Normal function
+
+        //iife
+        (
+            function(arr){
+            for(var i=0;i<arr.length;i++){
+                if(arr[i]%2==0){
+                    console.log(arr[i])
+                }
+            }
+        }
+        )([2,3,4,5,78,9]);        
+
+        function evenNormal(arr){
+            for(var i=0;i<arr.length;i++){
+                if(arr[i]%2==0){
+                    console.log(arr[i])
+                }
+            }
+        }
+        evenNormal([2,3,4,5,78,9])
+
+        // annoymous
+
+        var evenannoymous=function(arr){
+            for(var i=0;i<arr.length;i++){
+                if(arr[i]%2==0){
+                    console.log(arr[i])
+                }
+            }
+        }
+        evenannoymous([2,3,4,5,78,9])
+
+        //arrow
+
+        var evenarrow=(arr)=>{
+            for(var i=0;i<arr.length;i++){
+                if(arr[i]%2==0){
+                    console.log(arr[i])
+                }
+            }
+        }
+        evenarrow([2,3,4,5,78,9])  
+
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,84 @@
+Hoisting and scope
+Functions-and its types 
+
+Hoisting:
+variable can be declared after it has been used
+
+var let const
+
+var introduced and it was hoisted
+
+
+scope:reach/accessible
+{.....}=>block
+
+for(){}
+
+console.log(i)
+
+Functions-and its types:
+
+Functions:
+syntax:
+
+standard function
+//functionname is userdefined
+
+function functionname(){
+    //block of code
+}
+
+call/invoked
+
+functionname()
+
+
+Function With parameters
+
+function functionname(param1,param2){//parameters
+      //block of code
+}
+functionname(12,24)//arguments=>values
+
+Function With return keyword
+function functionname(){
+    //block of code
+    return val
+}
+functionname()
+
+Types of Function
+
+Annoymous function:
+
+var variablename=function(){
+    //block of code
+}
+variablename()
+
+global event handlers: mdn docs:
+ex: load event
+window.load()
+
+
+
+Arrow Function
+
+var variablename=()=>{
+    //block of code
+}
+variablename()
+
+IIFE function:
+Immediately Invoked Function Expression
+Grouping operator ()
+Invokation ()
+
+(
+    function(){
+        console.log("IIFE function")
+    }
+)();
+
+
+

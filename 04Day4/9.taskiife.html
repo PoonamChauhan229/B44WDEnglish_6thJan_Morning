@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- odd num from an array -->
+    <script>
+        (
+            function(arr){
+                for(i=0;i<arr.length;i++){
+                    if(arr[i]%2!==0){
+                        console.log(arr[i])
+                    }
+                }
+            }
+        )([2,3,4,5,6,7,8]);
+
+        // normal function
+            function oddnormal(arr){
+                for(i=0;i<arr.length;i++){
+                    if(arr[i]%2!==0){
+                        console.log(arr[i])
+                    }
+                }
+            }
+            oddnormal([2,3,4,5,6,7,8]);
+
+        //annoymous 
+
+        var oddannoymous=function(arr){
+                for(i=0;i<arr.length;i++){
+                    if(arr[i]%2!==0){
+                        console.log(arr[i])
+                    }
+                }
+            }
+        oddannoymous([2,3,4,5,6,7,8]);
+
+        //arrow function
+
+        var oddarrow=(arr)=>{
+                for(i=0;i<arr.length;i++){
+                    if(arr[i]%2!==0){
+                        console.log(arr[i])
+                    }
+                }
+            }
+            oddarrow([2,3,4,5,6,7,8]);
+
+
+
+    </script>
+    
+</body>
+</html>
