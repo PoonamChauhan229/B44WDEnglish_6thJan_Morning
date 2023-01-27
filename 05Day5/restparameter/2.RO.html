@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function abc(a,b,...args){
+            console.log(a,b,args)
+            console.log(a,b,...args)//spread opeartor
+        }
+        abc("one","two","three","four")
+
+
+        // Error code
+        function pqr(a,b,...args,g){
+            console.log(a,b,args)
+            console.log(a,b,...args)//spread opeartor
+        }
+        pqr("one","two","three","four","five")
+
+        // Rest parameter must be last formal parameter
+    </script>
+</body>
+</html>

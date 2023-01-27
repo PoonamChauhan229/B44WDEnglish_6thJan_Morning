@@ -1,0 +1,49 @@
+var vs let vs const
+block scoping
+spread & rest operators
+array & object destructure
+Object property shorthand
+Template literals
+Arrow functions=> covered
+const abc=()=>{}
+
+
+var vs let vs const
+
+Scope:
+
+var :global reach+functional scope
+let :global reach+blockscope =>{---}
+const:global reach+blockscope =>{---}
+
+
+spread & rest operators:
+
+Spread:
+...
+[1,2,3,4]
+spreading the elements of an array
+1 2 3 4
+
+
+Rest operators:
+...
+Rest parameter:
+function(q,b,c,...rest)
+...rest=> userdefined
+...rest=> accept no no /indefinite arguments
+
+var arr=[1..............n]=>...rest
+
+
+Template literals:
+
+Object property shorthand:
+
+array & object destructure:
+
+destructuring:
+functional components in Hooks:
+
+
+

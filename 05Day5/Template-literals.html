@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var a=5;
+        var b=10;
+        console.log(a+b)
+        // a:5 and b:10
+
+        // traditional
+        // concat=>(+)
+
+        console.log("a:"+a+" and b:"+b)
+        console.log("a:",a,"and b:",b)
+        
+        // a value is 5 and b value is 10 and sum is 15
+        console.log("a value is "+a+" and b value is "+b+" and sum is "+(a+b))
+
+        console.log("a value is ",a," and b value is ",b," and sum is ",(a+b))
+
+
+        // Template Literals
+        // => backtick   `below escape button>${javascript }
+
+         // a:5 and b:10
+         console.log(`a:${a} b:${b}`)
+
+         console.log(`a value is ${a} and b value is ${b} and sum is ${a+b}`)
+
+        //  a:b b:a=> 5:10 10:5
+        console.log(`${a}:${b} ${b}:${a}`)//=> best one
+        console.log(a+":"+b+" "+b+":"+a)
+        
+    </script>
+</body>
+</html>

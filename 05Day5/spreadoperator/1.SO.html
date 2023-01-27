@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var arr=[1,2,3,4]
+        console.log(...arr)
+
+        // concat=> .concat()
+        var arr1=[2,8,9]
+        console.log(arr.concat(arr1))
+
+        // concat with spread operator
+        console.log([...arr,...arr1])
+
+        console.log([...arr])// copying the same array
+
+        //push method to add at the end of the array
+        arr.push(5)
+        console.log(arr)
+
+        console.log([...arr,6,8,89])
+
+        // 
+        console.log(arr,6,8)
+        console.log([...arr,6,8])
+
+        // Math.min
+        console.log(Math.min(...arr))
+
+
+        // objects:
+        const user={
+            name:"Jay",
+            age:26
+        };
+       // console.log(user)
+        // console.log({...user})//cloned or copied
+
+
+        const user1={
+            name:"Jyesh",
+            location:"Tamil Nadu",
+            Pincode:509009
+        };
+        // console.log(user1)
+       
+       console.log({...user}, {...user1})
+       console.log({...user, ...user1})
+
+    //    inserting into an object
+       user.name="Arun"
+       console.log(user)
+
+
+
+
+    </script>
+</body>
+</html>
