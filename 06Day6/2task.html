@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class Movie{  
+            // a  
+            constructor(title,studio,rating){
+                this.title=title;
+                this.studio=studio;
+                // this.rating=rating;
+                if(rating==null||rating ==undefined){
+                    return this.rating="PG"
+                }else{
+                    return this.rating=rating
+                }
+            }
+            // methods:
+             // getPG(){}
+            getPG(array){
+                console.log(array)
+                // console.log(array[0].rating)
+                // console.log("This is an method")
+                let result=[]
+                for(var i=0;i<array.length;i++){
+                    if(array[i].rating=="PG"){
+                        console.log("return the film")
+                        result.push(array[i])
+                    }              
+            }
+            return result                 
+            }
+        }
+        // d
+        var film1=new Movie("Casino Royale","Eon Productions","PG13")
+        console.log(film1)
+        // b) The constructor for the class Movie will set the class property rating to "PG" as default when no rating is provided.
+        var film2=new Movie("XYZ Royale","XYZ Productions")
+        console.log(film2)
+
+        var film3=new Movie("ABC Royale","ABC Productions","PG20")
+        console.log(film3)
+
+        var film4=new Movie("PAR Royale","PAR Productions")
+        console.log(film4)
+
+        var film5=new Movie("AFR Royale","AFR Productions")
+        console.log(film5)
+
+        console.log([film1,film2,film3,film4,film5])
+        
+
+        // c) Write a method getPG, which takes an array of base type Movie as its argument, and returns a new array of only those movies in the input array with a rating of "PG". You may assume the input array is full of Movie instances. The returned array need not be full.   
+
+        // call the methods:
+       
+        let array=[film1,film2,film3,film4,film5]
+        //film2.getPG(array)//arguments
+        console.log(film2.getPG(array))
+
+    </script>
+</body>
+</html> 

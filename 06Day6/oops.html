@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+        class Car{
+            constructor(name,year){//special way of assigning the value(properties)
+                console.log("constructor is called immediately")
+                this.name=name,
+                this.year=year
+            }
+        }
+
+        var s1=new Car("Audi",2022)// create the object => call the class//arguments
+        // object is created with a name s1
+        //s1=> reference variable 
+        //n of instanace of 
+        var s2=new Car("Mercedes","2023")
+        console.log(s1)
+        console.log(s2)
+        console.log(s2.name,s2.year)
+        console.log(s1.name,s1.year)
+
+
+        // You have to create a class Person => hold all the details:
+        // Person:
+        // name,height,gender,color,age etc.....
+
+    </script>
+</body>
+</html>

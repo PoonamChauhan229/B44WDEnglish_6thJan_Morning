@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class Person{
+            constructor(name,age,place){
+                console.log("its working or not")
+                this.name=name;
+                this.age=age;
+                this.place=place
+            }
+        }
+        var user=new Person("Khusi",21,"Himachal Pradesh")
+        var user1=new Person("Maruti",21,"Himachal Pradesh")
+        var user2=new Person("Arvind",21,"Himachal Pradesh")
+        var user3=new Person("joy",21,"Himachal Pradesh")
+        console.log(user,user1,user2,user3)
+        console.log([user,user1,user2,user3])
+        console.log(`My name is ${user.name}, age is ${user.age} and i belong to ${user.place}`)
+        
+        user.age=45;
+        console.log(user.age)
+        console.log(`My name is ${user.name}, age is ${user.age} and i belong to ${user.place}`)
+
+
+        // 
+        //var obj={}=> object literals
+        //      =`${js}`=> template literals
+        var user4=new Person("joy",null,"Himachal Pradesh")
+        console.log(user4)
+
+    </script>
+
+</body>
+</html>
