@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function Pen(name,color,price){//constructor
+            this.name=name;
+            this.color=color;
+            this.price=price;
+        }
+        let pen=new Pen("Marker","Blue",100)
+        console.log(pen)
+
+        // every JS is a function
+
+        // Added Method name
+        Pen.prototype.showPrice=function(){
+            console.log(`Price of ${this.name} is ${this.price} `)
+        }
+        pen.showPrice()
+        // added Property:
+        Pen.prototype.type="Gel"
+        console.log(pen.type)
+
+
+
+        function Person(name,age,place){
+                console.log("its working or not")
+                this.name=name;
+                this.age=age;
+                this.place=place
+            }
+        var user=new Person("Khusi",21,"Himachal Pradesh")
+        console.log(user)
+        
+
+    </script>
+</body>
+</html>
