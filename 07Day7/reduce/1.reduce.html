@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var arr=[1,2,3,4]
+        // sum of all the elements:
+        // Without acc
+        var arr=[1,2,3,4]
+        // sum of all the elements:
+        // Without acc
+        var result=arr.reduce((acc,element)=>acc+element)
+        console.log(result)
+        //With acc
+
+        var resultacc=arr.reduce((acc,element)=>acc+element,100)
+        console.log(resultacc)
+
+        // ex:
+        let num=[15.5,10.1,8.9,9.3]
+        var add=num.reduce(getSum,100)
+
+        function getSum(acc,element){
+            return Math.round(acc)+ Math.round(element)
+        }
+        console.log(add)
+
+</script>
+</body>
+</html>

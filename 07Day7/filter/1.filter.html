@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var arr=[1,2,3,4]
+        //even no: filter out from the above the array
+        var result=arr.filter((element)=>element%2==0)
+        console.log(result)
+
+        //odd no:
+        var resultodd=arr.filter((element)=>element%2!==0)
+        console.log(resultodd)
+        console.log(arr)
+
+
+        // 
+        var str="hrllo"
+        console.log(str.length)
+
+        let words=['spray',"limit","eliteo","present","destruction"]
+        var resultword=words.filter((element)=>element.length>=6)
+        console.log(resultword)
+        
+        //
+        var age=[13,67,89,56,78,18]
+        //extract from here who can vote
+        var resultage=age.filter((element)=>element>=18)
+        console.log(resultage)
+
+        var num=[112,-5,-1,-3,98,90,67]
+        //find positive no
+        var positivenum=num.filter((element)=>element>=0)
+        console.log(positivenum)
+        console.log(num)
+    </script>
+</body>
+</html>

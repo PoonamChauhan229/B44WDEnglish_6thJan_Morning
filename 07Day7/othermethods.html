@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        var arr=[1,2,3,4,"a","aa1"]
+        // pop
+        //=>removes the element from the last
+        //=>transforming original array        
+        console.log(arr)
+        arr.pop()
+        console.log(arr)// [1, 2, 3, 4, 'a']
+
+        //shift
+        //=>removes the element from the begining
+        //=>transforming original array  
+        arr.shift()
+        console.log(arr)// [2, 3, 7,'a']
+
+        //push
+        //=>add the element at the last
+        //=>transforming original array
+        arr.push(7)
+        console.log(arr)//[2, 3, 4, 'a', 7]      
+
+        //unshift
+        //=>add the element in the begining
+        //=>transforming original array 
+        arr.unshift(100,200)
+        console.log(arr)// [100, 200, 2, 3, 4, 'a', 7]
+
+        //toString()
+        // =>convert array elements to the string
+        // =>NOT transforming your oringal array
+        console.log(arr.toString())
+        console.log(arr)
+
+        // join()
+        // => return a new string
+        // =>NOT transforming your oringal array
+        console.log(arr.join())
+        console.log(arr)
+
+        //includes()
+        //=>whether an array includes a certain value
+        // =>NOT transforming your oringal array
+        // =>true or false
+        console.log(arr.includes(200))//true
+        console.log(arr)
+        var pets=["cat","dog","tortoise"]
+        pets.includes('parrot')//false
+    </script>
+</body>
+</html>

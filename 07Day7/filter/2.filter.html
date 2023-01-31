@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // marks greather than 50=>name of that person
+        
+
+        var student = [{
+            name: "alex",
+            marks: 50
+        },
+        {
+            name: "bob",
+            marks: 60
+        },
+        {
+            name: "karl",
+            marks: 80
+        }]
+
+
+      var result=student.filter((element)=>element.marks>50)
+      console.log(result)
+      //console.log(result[0].name,result[1].name)//for loop=> better than that map()
+
+      console.log(result.map((element)=>element.name))
+    </script>
+
+</body>
+</html>

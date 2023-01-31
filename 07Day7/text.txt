@@ -1,0 +1,114 @@
+Array Methods:
+Map
+Reduce 
+Filter
+
+MRF: Array methods:
+
+var arr=[1,2,3,4]
+o/p:[2,4,6,8]
+
+1*2=2
+2*2=4
+3*2=6
+4*2=8
+
+for loop:
+var mul=[]//step1
+for(i=0;i<arr.length;i++){//step2: forloop//step3:
+    mul.push(arr[i]*2)//step4
+}
+console.log(mul)//step5
+console.log(...mul)//step6
+
+How many steps=>5-6 steps:
+
+Map Method:
+map()
+
+arr.map(function(){})
+transforms an Array
+it works on each and every element of the Array
+it takes function as paramater
+return a new array
+
+
+Arrow function
+()=>{}
+var arr=[1,2,3,4]
+var result=arr.map((element)=>element *2)
+console.log(result)
+
+
+var arr=[1,2,3,4]
+var result=arr.map((element)=>element *2)
+console.log(result)
+
+ (4) [2, 4, 6, 8]
+undefined
+var arr=[1,2,3,4]
+var result=arr.map((element)=>element *3)
+console.log(result)
+
+ (4) [3, 6, 9, 12]
+undefined
+arr
+(4) [1, 2, 3, 4]
+
+
+var arr=[1,2,3,4]
+console.log(arr.map((element)=>element *3))
+
+
+(4) [3, 6, 9, 12]
+
+Filter:
+arr.filter()
+function as an paramater
+-condition=> satisfied=> output
+-condition not satisfied=> ignore that element
+-condition=>eliminate/give the output
+-returns an new array
+
+arr.filter(()=>{})
+
+slice()=covered
+pop()
+push()=covered
+shift()
+unshift()
+
+
+Reduce
+var arr=[1,2,3,4]
+reduces entire array into an single value
+>function => 2 paramater
+        =>2 paramater=>accumulator(acc)  
+                     => element
+>acc value
+
+for loop:
+6-7 steps involved:
+
+arr.reduce(()=>{})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

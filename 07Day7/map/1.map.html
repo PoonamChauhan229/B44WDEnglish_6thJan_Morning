@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Ex:1
+        var arr=[1,2,3,4]
+        // map method
+        var result=arr.map((element,index,arr)=>{
+            console.log(element,index,arr)
+        })
+
+        console.log(arr.map((element)=>element*21))
+        console.log(arr)
+
+        // Ex2:
+        var arr1=["11p","13p","16p"]
+        console.log(arr1.map((element)=>parseInt(element)*2))
+
+        // Ex3:
+        let arr2=[1,4,9]
+        console.log(arr2.map((element)=>Math.sqrt(element)))
+        console.log(arr2.map(Math.sqrt))
+
+        // Ex6:array of objects
+        var arr3=[
+            {fname:"ARvind",lastname:"yadav"},
+            {fname:"Khusi",lastname:"ram"},
+            {fname:"Maruthi",lastname:"A"},
+            {fname:"Amuthan",lastname:"C"}
+        ]
+        console.log(arr3.map((element)=>console.log(element.fname,element.lastname)))
+    </script>
+</body>
+</html>
