@@ -1,0 +1,80 @@
+HTML:
+
+VS code:
+
+Vs code Extensions:
+HTML CSS Support -ecmel
+Live Server-Ritwick Dey
+vscode-icons-VSCode Icons Team
+
+HTML:
+Hypertext Markup Language
+used to create web page or web app
+HTML=> static webpages
+
+Emmet Abbreviation
+Shift+!=> simple HTML document
+
+
+HTML tags:
+<-angular bracket
+
+opening tag
+<tagname>
+content
+closing tag
+</tagname>
+
+self closing tags
+<tagname/> => <tagname>
+
+
+Tags:
+paragraph tag:
+<p></p>
+
+Each tag will have its own properties
+
+table tag
+<table>
+    <thead>
+    <tr>
+        <th>Name</th>
+        <th>surName</th>
+        <th>email</th>
+        <th>contact no</th>
+    </tr>
+    </thead>
+
+    <tbody>
+        <tr>
+            <td>ABC</td> 
+            <td>PRQ</td>   
+            <td>abc@gmail.com</td>   
+            <td>879898989</td>         
+        </tr>
+        <tr>
+            <td>ABC</td> 
+            <td>PRQ</td>   
+            <td>abc@gmail.com</td>   
+            <td>879898989</td> 
+        </tr>
+        <tr>
+            <td>ABC</td> 
+            <td>PRQ</td>   
+            <td>abc@gmail.com</td>   
+            <td>879898989</td> 
+        </tr>
+        <tr>
+            <td>ABC</td> 
+            <td>PRQ</td>   
+            <td>abc@gmail.com</td>   
+            <td>879898989</td> 
+        </tr>
+    </tbody>
+</table>
+
+
+
+
+
