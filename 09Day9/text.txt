@@ -1,0 +1,38 @@
+html file
+.html
+=>index.html
+
+js file
+.js
+=>script.js
+
+css file
+.css
+=>index.css
+=>style.css
+
+CSS:
+Cascading style sheet:
+
+CSS is all about presentation
+designing
+pleasing 
+
+external js
+.js
+
+Insert any CSS in html
+3 ways:
+external css=> u can link and make it available for all of them
+internal css=>style tag=><style></style>=> only to that particluar page
+inline css=> only to the particluar element
+
+Syntax of writing css
+selectors{
+    property:value;
+}
+
+TYpes of selectors
+tagname=> tagname{.....styling}
+idname are the atributes=> ids should be unique=> #idname{....styling}
+classname are the atributes=> repititive=>.classname{....styling}
