@@ -1,0 +1,109 @@
+Intro to pseudo-classes (link,visited,hover,active)
+box model: padding,margin,border 
+Grid
+position property: fixed,static,relative,absolute,sticky
+gradient
+
+Flex - display, direction, wrap, flex-flow, justify-content, align-content=>tommorow
+
+CSS:
+
+using selectors how can we style
+3 ways => write
+we saw basic properties where we can to design
+
+pseudo-classes:
+keyword=> special state of that particular element
+
+selector: pseudo-class{
+    property:value
+}
+link
+visited
+hover
+active
+
+box model: padding,border,margin 
+wrapper:
+
+content
+border
+margin
+padding
+
+Padding:
+it is used to create space around the elements content within the definite borders.
+Padding:
+padding-top:15px;
+padding-right: 20px;
+padding-bottom: 30px;
+padding-left: 100px;
+
+Shorthand:
+padding:10px: TRBL=> 10px
+padding:10px 20px: TB=> 10px RL=>20px
+padding: 10px 20px 30px 40px=> T=>10px R=>20px B=>30px L=>40px
+
+
+Margin:
+it is used to create space around the elements content outside the definite borders.
+margin-top: 15px;
+margin-right: 20px;
+margin-left: 30px;
+margin-bottom: 40px;
+
+Shorthand:
+margin:10px: TRBL=> 10px
+margin:10px 20px: TB=> 10px RL=>20px
+margin: 10px 20px 30px 40px=> T=>10px R=>20px B=>30px L=>40px
+
+
+Border:
+
+border-width:2px;
+border-style: solid;
+border-color:aqua;
+
+shorthand:
+border:1px solid red;
+default:
+1px solid black
+border:solid;
+
+position:
+
+5 ways:
+static
+relative
+absolute
+sticky
+fixed
+
+position:static
+position:relative
+---
+
+Left right top bottom
+top
+or
+bottom
+
+left
+or
+right
+
+Static: By default
+no change
+no effect Left right top bottom
+
+Relative:
+it position itself from the orginal position
+space is created
+its affects the document flow
+effect Left right top bottom
+
+absolute:
+sticky:
+fixed:
+
+
