@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    /* within 400px this bgcolor should be rendered */
+    @media screen and (max-width:400px) {
+        div{
+            background-color: green;
+            font-size: 20px;
+            color:white;
+        }
+    }
+    /* beyond the 500px this bgcolor should be rendered */
+    @media screen and (min-width:500px){
+        div{
+            background-color: pink;
+            font-size: 22px;
+            color: navy;
+        }        
+    }
+    /* between 600px 700px */
+    @media (min-width:600px) and (max-width:700px) {
+        div{
+            background-color: violet;
+            font-size: 24px;
+            color: blanchedalmond;
+        }  
+    }
+</style>
+
+<body>
+    <div>
+        Hi Everyone
+    </div>
+    <p> Hello , How are You?</p>
+</body>
+</html>
