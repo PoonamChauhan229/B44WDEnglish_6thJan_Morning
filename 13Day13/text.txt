@@ -1,0 +1,25 @@
+
+
+X-Small	None	0 to <576px
+Small	sm	≥576px <768px
+Medium	md	≥768px <992px
+Large	lg	≥992px <1200
+Extra large	xl	≥1200px  <1400px
+Extra extra large	xxl	≥1400px
+
+
+screen
+
+md 
+
+grid
+total 12 cols
+12=>6+6
+12=>3+3+3+3
+12=>4+4+4
+12=>2+2+2+2+2+2
+12=>1+1+1+1+1+1+1
+12=>8+4
+12=>10+2
+12=>9+3
+
