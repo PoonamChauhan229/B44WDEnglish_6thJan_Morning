@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    /* .container{
+        background-color: navy;
+        color:white;
+    } */
+</style>
+<body>
+    
+    <script>
+        var division=document.createElement('div')
+        division.innerHTML="<h2>Hello</h2>"//normal text and tag
+        document.body.append(division)
+
+        // class or id how can 
+        // setAttribute
+        // setAttribute('class','classname')
+        // setAttribute('id','idname')
+        // setAttribute('for','username')
+        // setAttribute('name','userid')
+        division.setAttribute('class','container')
+
+        division.setAttribute('id','header')
+
+        // style any element with JS:
+
+        division.style.backgroundColor="navy"
+        division.style.color="white"
+
+        // multiple class
+        // classList
+        division.classList.add('main','main1','container2','container3','container4')
+
+
+
+        
+    </script>
+</body>
+</html>

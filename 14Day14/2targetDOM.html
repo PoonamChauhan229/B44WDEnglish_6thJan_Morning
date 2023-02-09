@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div id="navbar">
+            <div id="nav">XYS</div>
+            <div class="navbarHeading">Home</div>
+            <div class="navbarHeading">About</div>
+            <div class="navbarHeading">Contact Us</div>
+            <div class="navbarHeading">Services</div>
+            <button>SignIn/SignUp</button>
+            <button>SignIn/SignUp</button>
+        </div>
+    </div>
+
+    <script>
+        var wrapper=document.getElementsByClassName('container')
+        console.log(wrapper)
+
+        var navbar=document.getElementById('navbar')
+        console.log(navbar)
+
+        var nav=document.getElementById('nav')
+        console.log(nav)
+        nav.innerHTML="<h1>yuioiooi</h1>"
+
+        var navbarHeading=document.getElementsByClassName('navbarHeading')
+        console.log(navbarHeading.length)
+
+        var button=document.getElementsByTagName('button')
+        console.log(button)
+
+        // for loop
+        for(var i=0;i<navbarHeading.length;i++){
+            navbarHeading[i].innerText="ABC"
+            console.log(navbarHeading[i])
+        }
+
+        for(var i=0;i<button.length;i++){
+            button[i].innerText="Login"
+            console.log(button[i])
+        }
+
+
+    </script>
+</body>
+</html>

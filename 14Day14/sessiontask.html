@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+            <div class="row firstrow">
+                <div class="col">Hi</div>
+            </div>
+    </div>
+    <!-- create the above structure -->
+    <script>
+        // 1st way:
+        var firstDiv=document.createElement('div')
+        firstDiv.setAttribute('class','container')
+        document.body.append(firstDiv)
+
+        var rowDiv=document.createElement('div')
+        rowDiv.classList.add('row','firstrow')
+
+        firstDiv.append(rowDiv)
+
+        var colDiv=document.createElement('div')
+        colDiv.classList.add('col')
+        colDiv.innerText="Hi"
+
+        rowDiv.append(colDiv)
+
+        // 2way
+
+        var secondDiv=document.createElement('div')
+        secondDiv.setAttribute('class','container')
+        document.body.append(secondDiv)
+
+        secondDiv.innerHTML=`
+        <div class="row firstrow">
+                <div class="col">Hi</div>
+            </div>       
+        `
+    </script>
+</body>
+</html>

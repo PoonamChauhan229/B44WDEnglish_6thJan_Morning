@@ -1,0 +1,61 @@
+Basic of JS
+HTML 
+CSS
+Bootstrap
+
+Javascript:
+DOM Tree:
+Document Object Model:
+
+
+var div=document.createElement('div')
+
+div.innerHTML="<h1>Hello DOM</h1>"
+'<h1>Hello DOM</h1>'
+document.body.append(div)
+
+var p=document.createElement('p')
+
+p.innerText="Hi, How are you ...."
+'Hi, How are you ....'
+
+document.body.append(p)
+
+
+var span=document.createElement('span')
+undefined
+span.innerText="<h1>Span Tag</h1>"
+'<h1>Span Tag</h1>'
+document.body.append(span)
+
+Selectors:
+Tag
+id
+class
+
+JS:
+id:
+document.getElementById(idname)
+class
+ document.getElementsByClassName(classname)
+Tag
+document.getElementsByTagName(tagname)
+
+element doesnt exist, o/p=>null
+
+CSS Selectors:
+.classname
+#id
+
+ document.querySelector('#idname')
+ document.querySelector('.classname')
+ => 1st element 
+
+
+ document.querySelectorAll('.classname')
+ //all of them 
+
+Live DOM View
+https://software.hixie.ch/utilities/js/live-dom-viewer/
+
+

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div id="navbar">
+            <div class="navbarHeading">Home</div>
+            <div class="navbarHeading">About</div>
+            <div class="navbarHeading">Contact Us</div>
+            <div class="navbarHeading">Services</div>
+            <button>SignIn/SignUp</button>
+            <button>SignIn/SignUp</button>
+        </div>
+    </div>
+
+    <script>
+        var navbarHeading=document.querySelector('.navbarHeading')
+        console.log(navbarHeading)
+
+        var navbarHeadings=document.querySelectorAll('.navbarHeading')
+        console.log(navbarHeadings)
+
+        for(var i=0;i<navbarHeadings.length;i++){
+            navbarHeadings[i].innerText="ABC"
+            console.log(navbarHeadings[i])
+        }
+
+    </script>
+</body>
+</html>
