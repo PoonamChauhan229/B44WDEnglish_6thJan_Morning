@@ -1,0 +1,7 @@
+alert
+prompt
+confirm
+events
+setinterval 
+settimeout
+table =>dom everything dyanamic

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head><style>
+    div{
+        height:100px;
+        width:100px;
+        background-color: red;
+    }
+</style>
+<body>
+    <!-- moving div -->
+    <div id="test"></div>
+    <script>
+        var id=setInterval(anim,80)
+        
+        var a=0;
+        function anim(){
+           a=a+10
+           console.log(a)
+           if(a==1200){
+            // clearInterval(id)
+            clearTimeout(id)
+           }else{
+            var divMove=document.getElementById('test')
+            // console.log(a)
+            divMove.style.marginLeft=a+"px"
+           }
+            
+        }
+        // 1 to 10
+        // 11=> Happy Birthday Your Name
+
+    </script>
+</body>
+</html>

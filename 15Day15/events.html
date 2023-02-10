@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- whenever we prform any action an event is triggered -->
+
+    <!-- click event  -->
+    <!-- onclick event -->
+    <!-- i want to get called , when we click any button -->
+    <button onclick="clickMe()">Button</button>
+    
+    <!-- on blur -->
+    <input type="text" name="" id="fname" value="" onblur="displayone()">
+
+    <!-- onchange -->
+
+    <select name="" id="mySelect" onchange="myChange()">
+        <option value="Audi">Audi</option>
+        <option value="BMW">BMW</option>
+        <option value="Suzuki">Suzuki</option>
+        <option value="Nano">Nano</option>
+    </select>
+
+    <p id="para1"></p>
+    <script>
+        function clickMe(){
+            console.log("Button Clicked")
+        }      
+           
+        // blur event
+        var fname=document.getElementById('fname')
+
+        // abc=ABC
+        console.log(fname.value)
+        function displayone(){
+            fname.value=fname.value.toUpperCase()
+        }
+        // onchange
+        
+        console.log(mySelect)
+
+        var para1=document.getElementById('para1')
+        function myChange(){
+            var mySelect=document.getElementById('mySelect').value
+            para1.innerText=mySelect
+        }
+        
+    </script>
+
+
+
+</body>
+</html>

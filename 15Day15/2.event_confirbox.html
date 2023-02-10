@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- whenever the button is clicked
+    want to show the output in the p tag
+    -->
+    <button ondblclick="message()">Try</button>
+    <p id="para1"></p>
+    <script>
+        var output=document.getElementById('para1')
+        function message(){
+            var text;
+            if(confirm("Press a Button")==true){
+               
+                text="You pressed OK!"
+                //console.log(text)
+                //output.innerText=text
+            }
+            else{
+                text="You pressed cancelled!"
+                //console.log(text)
+                //output.innerText=text
+            }
+            console.log(text)
+            output.innerText=text
+        }
+        //console.log(text)
+        // message()
+    </script>
+</body>
+</html>
