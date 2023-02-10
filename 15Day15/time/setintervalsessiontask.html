@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    p{
+        color:pink;
+    }
+</style>
+<body>
+    <p id="counter"></p>
+    <script>
+        var id=setInterval(counter,1000)
+        var count=0;
+        function counter(){
+            count++;
+            console.log(count)
+            var paraCounter=document.getElementById('counter')
+            if(count==11){  
+                //stop                
+                paraCounter.innerText="Happy Birthday Guvi"
+                paraCounter.style.color="red"
+                clearInterval(id)
+            }else{
+                //work
+                paraCounter.innerText=count
+
+            }
+
+        }
+
+        // 1 to 10
+        // 11=> Happy Birthday Your Name
+        // settimeout
+    </script>
+</body>
+</html>
