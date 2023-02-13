@@ -1,0 +1,38 @@
+.quizContainer{
+    /* border:1px solid black; */
+    width: 40%;
+    padding: 30px 10px 30px 70px;
+    margin: 10% 5% 5% 25%;
+}
+h2{
+    background-image: linear-gradient(blue,yellow);
+    width: 80%;
+    text-align: center;
+    padding: 4px;
+    margin:0;
+    border-radius: 4%;
+}
+ul{
+    padding: 0;
+    margin:0;
+}
+ul >li{
+    list-style-type:none;
+    border-bottom: 1px solid rgba(196, 74, 74, 0.493);
+    padding: 10px;
+    width: 77%;
+    font-size: 18px;
+}
+button{
+    padding: 10px 27px;
+    font-size: 18px;
+    margin-left: 30%;
+    margin-top:3%;
+    text-align: center;
+    background-image: linear-gradient(blue,yellow);
+    border: none;
+}
+body{
+    background-color: rgb(221, 217, 217);
+    /* background-image: url("https://i.ibb.co/frqqx3S/glitterimg.jpg"); */
+}
