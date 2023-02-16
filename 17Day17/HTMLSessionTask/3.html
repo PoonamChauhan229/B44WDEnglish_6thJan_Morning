@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            /* background-color: gray; */
+            width: 500px;
+            border: 1px solid rebeccapurple;
+            text-align: center;
+            background-image: url(https://flagcdn.com/w320/pm.png);
+        }
+        p{
+            /* font-weight: bold; */
+            color:navy;
+            text-decoration: underline;
+        }
+        input,textarea{
+           display: block;
+           height: 25px;
+           width:200px;
+           text-align: center;
+           margin:5px;
+           margin-left:120px;
+        }
+        textarea{
+            height:50px;
+            width:202px;
+        }
+        .btn{
+            background-color: blueviolet;
+            color:white;
+            border: none;
+            width: 100px;
+            margin-left:35%;
+        }
+        
+    </style>
+</head>
+<body>
+    <!-- Design a contact us form with all fields as required. -->
+    <form>
+    <div class="container">
+        <h2>Contact Us</h2>
+        <p><b>Do you have any questions? Please dont hesitate, FIll the form and ask</b></p>
+        <input type="text" name="name" id="" placeholder="Your Name" required>
+        <input type="email" name="email" id="" placeholder="Your Email" required>
+        <input type="text" name="sub" id="" placeholder="Subject" required>
+        <textarea name="desc" id="" cols="21" rows="5" placeholder="Your message" required></textarea>
+        <input type="submit" value="Submit" class="btn">
+        <input type="reset" value="Reset" class="btn">
+    </div>
+</form>
+</body>
+</html>
