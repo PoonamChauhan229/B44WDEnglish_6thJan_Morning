@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function callMe(){
+            console.log("I m a callback function")
+        }
+
+        function greet(name,callback){
+            console.log(`Hi my name is ${name}`)
+            callback()
+        }
+        greet("Guvi",callMe)
+
+
+
+        // second example:
+        // display the sum of 2 num 
+        // => display=>callback
+        //=> calculate
+        // callback 
+
+        function display(res){
+            console.log(`Sum is ${res}`)
+        }
+        function sum(n1,n2,callback){
+            var add=n1+n2;
+            callback(add)
+        }
+       sum(3,5,display)
+
+    //    Print your own name:
+
+    function displayName(name){
+        console.log(`Name is ${name}`)
+    }
+
+    // 
+    function sayName(callback){
+        callback("Poonam")
+    }
+    sayName(displayName)
+
+    // 
+    function sayNamenew(a,callback){
+        callback(a)
+    }
+    sayNamenew("Poonam",displayName)
+    // 
+    function sayNamenewone(a,callback){
+        var name=a;
+        callback(name)
+    }
+    sayNamenewone("Poonam",displayName)
+    //
+    function sayNamenewtwo(callback){
+        var name="Poonam";
+        callback(name)
+    }
+    sayNamenewtwo(displayName)
+
+    
+    function timer(){
+        console.log("hello")
+    }
+    setTimeout(timer,1000)
+
+    // 
+    function newfun(x,callback){
+        console.log("Hi from newfunc")
+        callback(x)
+        //var b=a callback(b)
+    }
+
+    
+    //callback
+    function HelloName(name){
+        console.log(`Hello my name is ${name}`)
+        console.log("12")
+    }
+
+    setTimeout(newfun,1000,"Guvi",HelloName)
+
+  
+
+
+
+    </script>
+</body>
+</html>

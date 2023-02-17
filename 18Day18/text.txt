@@ -1,0 +1,10 @@
+execution context:
+=> container/big box=> JS code runs
+
+How JS code runs?
+
+
+
+
+
+Callback:

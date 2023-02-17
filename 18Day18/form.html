@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form onsubmit="xyz(event)">
+        <input type="text" name="x" id="one">
+        <input type="email" name="y" id="two">
+        <input type="submit" value="Submit">
+    </form>
+
+    
+    <script>
+        var one=document.getElementById('one')
+        var two=document.getElementById('two')
+        function xyz(event){
+           event.preventDefault()
+            console.log(one.value)
+            console.log(two.value)
+            one.value=""
+            two.value=""
+        }
+    </script>
+</body>
+</html>
