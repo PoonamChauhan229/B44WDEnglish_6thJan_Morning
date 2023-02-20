@@ -1,0 +1,18 @@
+Promise
+ - What is promise?
+ - Promise States
+ - Promise chain
+ - promise.all()
+ - Use of fetch() & then()
+
+
+Promise:
+Assurance
+Oath
+Commitment
+
+Promise:
+
+breaking
+
+Promise States

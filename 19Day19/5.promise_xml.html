@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let xmlPromise=new Promise((resolve,reject)=>{
+            var request=new XMLHttpRequest()
+            request.open('GET','https://restcountries.com/v3.1/all')
+            request.send()
+            request.onload=function(){
+                if(request.status==200){
+                    var data= JSON.parse(request.response)
+                    resolve(data)
+                }else{
+                    reject("Some Error Occured",request.status)
+                }
+            }
+
+        })
+        console.log(xmlPromise)
+        xmlPromise.then((res)=>console.log(res)).catch((err)=>console.log(err))
+    </script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var age=10;// prompt
+
+        // age>=18=>fullfil state
+        // !=> reject state
+
+        //var age=prompt("Enter the age")
+        //console.log(age)
+
+        const p=new Promise((resolve,reject)=>{
+            if(age>=18){
+                resolve("Eligible to Vote")
+            }else{
+                reject("Not Eligible to Vote")
+            }
+        })
+
+        console.log(p)
+        p.then((res)=>console.log(res)).catch((err)=>console.log(err))
+        
+
+    </script>
+</body>
+</html>

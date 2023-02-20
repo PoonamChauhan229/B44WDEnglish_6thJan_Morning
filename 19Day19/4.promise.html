@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function writePromise(){
+        return new Promise((resolve,reject)=>{
+                if(false){
+                resolve("Eligible to Vote")
+            }else{
+                reject("Not Eligible to Vote")
+            }
+
+            })
+            // console.log(p)
+            //return p
+        }
+        // console.log(writePromise())
+        writePromise().then((res)=>{console.log(res)}).catch((err)=>{console.log(err)})
+
+        // setTimeOut:
+
+        function writePromiseSetTimeOut(){
+        return new Promise((resolve,reject)=>{
+                if(true){
+                setTimeout(()=>{resolve("Eligible to Vote")},2000)
+            }else{
+                setTimeout(()=>{reject("Not Eligible to Vote")},2000)
+            }
+
+            })
+            // console.log(p)
+            //return p
+        }
+        // console.log(writePromise())
+        writePromiseSetTimeOut().then((res)=>{console.log(res)}).catch((err)=>{console.log(err)})
+    </script>
+</body>
+</html>

@@ -13,16 +13,25 @@
         <input type="submit" value="Submit">
     </form>
 
+    <div id="div1"></div>
+    <div id="div2"></div>
+
     
     <script>
         var one=document.getElementById('one')
         var two=document.getElementById('two')
+        var div1=document.getElementById('div1')
+        var div2=document.getElementById('div2')
         function xyz(event){
            event.preventDefault()
             console.log(one.value)
             console.log(two.value)
+            var a=one.value;
+            var b=two.value
             one.value=""
             two.value=""
+            div1.innerText=a
+            div2.innerText=b
         }
     </script>
 </body>

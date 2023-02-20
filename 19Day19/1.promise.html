@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // promise is an object
+        // new keyword 
+        // It takes function as an parameter
+        // initial stae is pending
+
+        const p=new Promise(()=>{})
+        console.log(p)// initial state is what Pending
+
+        //  ()=>{}=> 2 parameters=> resolve , reject
+
+
+        const p1=new Promise((resolve,reject)=>{
+            if(true){
+                resolve("Success")
+            }else{
+                reject("Fails")
+            }
+        })
+        console.log(p1)
+
+        const p2=new Promise((resolve,reject)=>{
+            if(false){
+                resolve("Success")
+            }else{
+                reject("Fails")
+            }
+        })
+        console.log(p2)
+    </script>
+</body>
+</html>
