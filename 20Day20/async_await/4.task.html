@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //fetch+.then
+        var apikey="68efa0885519a6f01d76917c463ada68"
+        var extractCityName=fetch('https://restcountries.com/v2/all')
+        .then(res=>{return res.json()})
+        .then(data=>{
+            //console.log(data)
+            //console.log(data[0].name)
+            var cityName=data[1].name
+
+            fetch(`https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=${apikey}`)
+            .then(res=>{return res.json()})
+            .then(data=>{
+                console.log(data)
+                console.log(data.visibility)
+            })
+        })
+
+    async function getWeatherCityData(){
+        try{
+            let res=await fetch('https://restcountries.com/v2/all')
+        let data=await res.json()
+        //console.log(data[0].name)
+        let cityName=data[0].name
+
+        let res1=await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=${apikey}`)
+        let data1=await res1.json()
+        console.log(data1)
+        }
+        catch(err){
+            console.log("Error found")
+        }
+    }
+    getWeatherCityData()
+
+    //try=>code will execute and catch=>errorblock
+    //try catch block
+    // Missing catch or finally after try => error , if you dont write catch immediately after try block 
+
+    //get the random cityname=> pass it to the weather api
+
+    </script>
+</body>
+</html>
