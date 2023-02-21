@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+        extract the cityname form the restcountries and pass it to weathermap API=> 0th Index
+        https://restcountries.com/v2/all=> cityname
+        https://api.openweathermap.org/data/2.5/weather?q=Innichen&appid=68efa0885519a6f01d76917c463ada68=>cityname
+        https://api.openweathermap.org/data/2.5/weather?q={city name}&appid=68efa0885519a6f01d76917c463ada68
+    -->
+<!-- 12:55 try to solve it  -->
+
+<script>
+    var apikey="68efa0885519a6f01d76917c463ada68"
+    var extractCityName=fetch('https://restcountries.com/v2/all')
+    .then(res=>{return res.json()})
+    .then(data=>{
+        //console.log(data)
+        //console.log(data[0].name)
+        var cityName=data[1].name
+
+        fetch(`https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=${apikey}`)
+        .then(res=>{return res.json()})
+        .then(data=>{
+            console.log(data)
+            console.log(data.visibility)
+        })
+    })
+
+    var a=3
+    console.log('https://restcountries.com/v2/all'+"3")
+    console.log('https://restcountries.com/v2/all'+a)
+    console.log(`https://restcountries.com${a}/v2/all${a}`)
+    
+    //get the random cityname=> pass it to the weather api
+
+</script>
+
+    </body>
+</html>

@@ -1,0 +1,7 @@
+fetch
+:fetch is an alternative to XML HTTP request
+async await
+
+fetch(`url`)
+
+result of an fetch is always a promise

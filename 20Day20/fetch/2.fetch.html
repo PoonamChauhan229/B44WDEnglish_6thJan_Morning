@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var res=fetch('https://restcountries.com/v3.1/all')
+        console.log(res)
+
+        var res1=fetch('https://restcountries.com/v3.1/all')
+        .then((res)=>{
+            //console.log(res.json())
+            return res.json()// converts into json and 
+        }).then((data)=>{
+                console.log(data)
+                display(data)}
+        )// gives you to the value
+       .catch(err=>console.log(err))
+
+
+       function display(params){
+        console.log(params)// 250 restcountries
+
+       }
+
+    
+    </script>
+
+</body>
+</html>
