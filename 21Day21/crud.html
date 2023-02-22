@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // https://63e4b3c5c04baebbcdaa0ebb.mockapi.io/users
+
+      let url = "https://63e4b3c5c04baebbcdaa0ebb.mockapi.io/users";
+
+      // CRUD
+      // READ
+      //async await
+      async function getUsersData() {
+        let data = await fetch(url);
+        let res = await data.json();
+        console.log(res);
+        console.table(res);
+      }
+      //getUsersData()
+
+      // Read with specific Id
+      //3
+      var id = 3;
+      console.log(url + "/" + id);
+      console.log(`${url}/${id}`);
+      let newUrl = `${url}/${id}`;
+      async function getUserSpecificData() {
+        let data = await fetch(newUrl);
+        let res = await data.json();
+        console.table(res);
+      }
+      //getUserSpecificData()
+
+      //CREATE
+
+      async function createUserData(name,email) {
+        let newUser = {
+          "name": name,
+          "email": email,
+        };
+        let data=await fetch(url,{
+            method:"POST",
+            headers:{"Content-Type": "application/json"},
+            body:JSON.stringify(newUser)
+        })
+        let res=await data.json()
+        console.log(res)
+      }
+      //createUserData("Poonam","poonam@guvi.in");
+
+    //   Update
+    async function updateUserData(){
+        let updateUser = {
+          "name": "Maruthi",
+          "email": "Maruthi@gmail.com",
+        };
+        //:id=>10
+        let data=await fetch(url+"/10",{
+            method:"PUT",
+            headers:{"Content-Type": "application/json"},
+            body:JSON.stringify(updateUser)
+        })
+        let res=await data.json()
+        console.log(res)
+    }
+    //updateUserData()
+
+    // Delete
+    //:id=>10
+
+    async function deleteUserData(){
+        let data=await fetch(url+"/7",{
+            method:"DELETE",
+            headers:{"Content-Type": "application/json"}
+        })
+        let res=await data.json()
+        console.log(res)
+    }
+    deleteUserData()
+
+    // try and catch=> you need to handle this 404 error
+
+    </script>
+  </body>
+</html>
