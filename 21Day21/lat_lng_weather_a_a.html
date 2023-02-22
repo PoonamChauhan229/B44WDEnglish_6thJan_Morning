@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var apikey="68efa0885519a6f01d76917c463ada68" 
+    async function getWeatherCityData(){
+        try{
+            let res=await fetch('https://restcountries.com/v2/all')
+            let data=await res.json()
+            //lat and longitude
+            console.log(data[0].latlng)
+            var latlon=data[0].latlng
+            console.log(latlon)
+            console.log(latlon[0],latlon[1])
+            
+            // random num
+            let randomNum=Math.round(Math.random()*data.length)
+            console.log(randomNum)
+            var latlonRandom=data[randomNum].latlng
+            console.log(latlonRandom)
+            console.log(latlonRandom[0],latlonRandom[1])
+
+
+
+            //console.log(data[0].latlng)
+            console.log(data[randomNum].latlng)
+
+            // var lat=latlon[0]
+            // var lon=latlon[1]
+
+            var lat=latlonRandom[0]
+            var lon=latlonRandom[1]
+
+
+           console.log(`https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${apikey}`)           
+
+            let res1=await fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${apikey}`)
+            let data1=await res1.json()
+            console.log(data1)
+            console.log(data1.visibility)
+        }
+        catch(err){
+            console.log("Error found",err)
+        }
+    }
+    getWeatherCityData()
+    </script>
+</body>
+</html>
