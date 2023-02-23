@@ -17,8 +17,9 @@ let mainMovieDiv=document.getElementById('mainMovieDiv')
 function showMovies(movies){
     //mainMovieDiv.innerHTML=""
     console.log(movies)
-    movies.map((element)=>{
+    movies.map((element,index)=>{
         console.log(element)
+        console.log(index)
         var movieDiv=document.createElement('div')
         movieDiv.classList.add("col","movie")
         movieDiv.innerHTML=`
@@ -36,7 +37,7 @@ function showMovies(movies){
                 <p>OverView</p>
                 <p>${element.overview}</p>
               </div>
-            </div>
+            </div>        
           </div>
 
         `
@@ -54,3 +55,6 @@ function getClassByVote(vote){
         return "red"
     }
 }
+
+//Reference:
+{/* <span id=btn${i} onClick="getWeather('${cityname}')"></span> */}
